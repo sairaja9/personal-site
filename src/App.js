@@ -21,7 +21,7 @@ function Navbar(props) {
   return (
     <Router>
       <nav id="navbar">
-        <Link to="/#home" id="logo" onClick={() => window.scrollTo(0, 0)}><p id="logo-text">SR</p></Link>
+        <Link to="/personal-site" id="logo" onClick={() => window.scrollTo(0, 0)}><p id="logo-text">SR</p></Link>
         <div id="menu-button" onClick={() => setActiveMenu(!activeMenu)}>
           <span class={firstSpanClass}></span>
           <span class="blank-span"></span>
@@ -30,18 +30,18 @@ function Navbar(props) {
         <div id="menu">
           {activeMenu ?
             <div id="menu-item-container" onClick={() => setActiveMenu(!activeMenu)}>
-              <HashLink to="/" className="menu-item" onClick={() => window.scrollTo(0, 0)}>Home  →</HashLink>
-              <HashLink to="/about" className="menu-item" onClick={() => window.scrollTo(0, 0)}>About  →</HashLink>
-              <HashLink to="/work" className="menu-item" onClick={() => window.scrollTo(0, 0)}>Experiences  →</HashLink>
-              <HashLink to="/#contact" className="menu-item">Contact  →</HashLink>
+              <HashLink to="/personal-site" className="menu-item" onClick={() => window.scrollTo(0, 0)}>Home  →</HashLink>
+              <HashLink to="/personal-site/about" className="menu-item" onClick={() => window.scrollTo(0, 0)}>About  →</HashLink>
+              <HashLink to="/personal-site/work" className="menu-item" onClick={() => window.scrollTo(0, 0)}>Experiences  →</HashLink>
+              <HashLink to="/personal-site/#contact" className="menu-item">Contact  →</HashLink>
             </div>
             : null}
         </div>
       </nav>
       <Routes>
-        <Route path="/about" element={<About />} />
-        <Route path="/work" element={<Work />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/personal-site/work" element={<Work />} />
+        <Route path="/personal-site/about" element={<About />} />
+        <Route path="/personal-site" element={<Home />} />
       </Routes>
     </Router>
   )

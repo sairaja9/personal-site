@@ -20,36 +20,36 @@ function Work(props) {
     return (
         <section id="work">
             <SubNav>
-                <HashLink to="/work#XAI" className="card-link">
+                <HashLink to="/personal-site/work#XAI" className="card-link">
                     <div className="sub-nav-item">
                         <p className='sub-nav-bold'>XAI</p>
                         <p className='sub-nav-light'>Explainable AI</p>
                     </div>
                 </HashLink>
-                <HashLink to="/work#GM" className="card-link">
+                <HashLink to="/personal-site/work#GM" className="card-link">
                     <div className="sub-nav-item">
                         <p className='sub-nav-bold'>GM</p>
                         <p className='sub-nav-light'>GenderMag</p>
                     </div>
                 </HashLink>
-                <HashLink to="/work#SR" className="card-link">
+                <HashLink to="/personal-site/work#SR" className="card-link">
                     <div className="sub-nav-item">
                         <p className='sub-nav-bold'>CHS</p>
                         <p className='sub-nav-light'>Spartan Robotics</p>
                     </div>
                 </HashLink>
-                <HashLink to="/work#CF" className="card-link">
+                <HashLink to="/personal-site/work#CF" className="card-link">
                     <div className="sub-nav-item">
                         <p className='sub-nav-bold'>CF</p>
                         <p className='sub-nav-light'>Charge Forward</p>
                     </div>
                 </HashLink>
             </SubNav>
-            <HashLink to="/work" className="card-link"><button className='back-to-top' onClick={() => window.scrollTo(0, 0)}>&#8613;</button></HashLink>
+            <HashLink to="/personal-site/work" className="card-link"><button className='back-to-top' onClick={() => window.scrollTo(0, 0)}>&#8613;</button></HashLink>
             <VariableSpacer />
             <CenterText>
                 <h1 className="page-title">Featured Experiences</h1>
-                <h2 className='page-subtitle'><HashLink to="/work#XAI" className='blue-u'>World class research</HashLink>, <HashLink to="/work#SR" className='purple-u'>organizational leadership</HashLink>, <HashLink to="/work#CF" className='green-u'>award winning community service</HashLink>.</h2>
+                <h2 className='page-subtitle'><HashLink to="/personal-site/work#XAI" className='blue-u'>World class research</HashLink>, <HashLink to="/personal-site/work#SR" className='purple-u'>organizational leadership</HashLink>, <HashLink to="/personal-site/work#CF" className='green-u'>award winning community service</HashLink>.</h2>
             </CenterText>
             <VariableSpacer />
             <div id="XAI"></div>

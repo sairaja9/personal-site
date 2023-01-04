@@ -27,16 +27,16 @@ function Home(props) {
                 <img id="circle-img" src={WhiteProfile} alt="profile" />
                 <h3 className="regular-text">I am currently a student at Rice University studying</h3>
                 <h2 className="middle-text">Computer Science, AI, Business, and Entrepreneurship.</h2>
-                <h3 className="regular-text">For more information about my educational focus, take a look at the <HashLink to="/about" onClick={() => window.scrollTo(0, 0)} className='regular-link'>about page</HashLink>. Get a taste of my goals, passions, and interests by delving into my favorite <HashLink to="/work" onClick={() => window.scrollTo(0, 0)} className='regular-link'>projects and experiences</HashLink> below. Want to know more? Let's <HashLink to="/#contact" className='regular-link'>get in touch</HashLink>!</h3>
+                <h3 className="regular-text">For more information about my educational focus, take a look at the <HashLink to="/personal-site/about" onClick={() => window.scrollTo(0, 0)} className='regular-link'>about page</HashLink>. Get a taste of my goals, passions, and interests by delving into my favorite <HashLink to="/personal-site/work" onClick={() => window.scrollTo(0, 0)} className='regular-link'>projects and experiences</HashLink> below. Want to know more? Let's <HashLink to="/personal-site#contact" className='regular-link'>get in touch</HashLink>!</h3>
             </CenterText>
             <VariableSpacer />
             <div className='scroll-arrow'>───→</div>
             <div className="center-container">
                 <div className="carousel" id="home-carousel">
-                    <HashLink to="/work#XAI" className="card-link"><Card cardImg={Car} cardText="Explainable AI Research →" cardDes="Co-authored international conference and journal papers about improving human-AI interaction."/></HashLink>
-                    <HashLink to="/work#GM" className="card-link"><Card cardImg={GM} cardText="GenderMag Project →" cardDes="Enhanced a web extension that targets inequitable software experiences."/></HashLink>
-                    <HashLink to="/work#SR" className="card-link"><Card cardImg={Robotics} cardText="Robotics Leadership →" cardDes="Helped team win a design award and led a 6+ month organization-wide restrucuting project."/></HashLink>
-                    <HashLink to="/work#CF" className="card-link"><Card cardImg={CF} cardText="Charge Forward Inc. →" cardDes="Helped refurbish and donate $75,000 of technology to 150+ families in need. Kept 1.5+ tons of technology out of landfills."/></HashLink>
+                    <HashLink to="/personal-site/work#XAI" className="card-link"><Card cardImg={Car} cardText="Explainable AI Research →" cardDes="Co-authored international conference and journal papers about improving human-AI interaction."/></HashLink>
+                    <HashLink to="/personal-site/work#GM" className="card-link"><Card cardImg={GM} cardText="GenderMag Project →" cardDes="Enhanced a web extension that targets inequitable software experiences."/></HashLink>
+                    <HashLink to="/personal-site/work#SR" className="card-link"><Card cardImg={Robotics} cardText="Robotics Leadership →" cardDes="Helped team win a design award and led a 6+ month organization-wide restrucuting project."/></HashLink>
+                    <HashLink to="/personal-site/work#CF" className="card-link"><Card cardImg={CF} cardText="Charge Forward Inc. →" cardDes="Helped refurbish and donate $75,000 of technology to 150+ families in need. Kept 1.5+ tons of technology out of landfills."/></HashLink>
                 </div>
             </div>
             <VariableSpacer />
